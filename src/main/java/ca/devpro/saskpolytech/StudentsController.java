@@ -1,6 +1,7 @@
 package ca.devpro.saskpolytech;
 
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -22,6 +23,7 @@ public class StudentsController {
 	}
 
 	@PostMapping
+	@ResponseStatus(HttpStatus.CREATED)
 	public Student create(@RequestBody Student student) {
 		return studentsRepository.save(student);
 	}
