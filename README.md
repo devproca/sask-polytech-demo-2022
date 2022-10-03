@@ -2,6 +2,11 @@
 
 We are going to create a Spring Boot REST CRUD application in 20 minutes or less... hopefully.
 
+## I forgot to demo spring boot tests
+* They start up the application, so you can write great integration tests from your rest end point to your database
+* They test everything we did in postman, but it's repeatable, so I never have to worry about breaking my code
+* [Check them out here](src/test/java/ca/devpro/saskpolytech/StudentsControllerTest.java)
+
 ## Technologies we are using
 * Spring - Java framework that provides comprehensive infrastructure support for developing Java applications
 * Spring Boot - Makes it easy to create stand-alone, production-grade Spring based applications that you can "just run"
